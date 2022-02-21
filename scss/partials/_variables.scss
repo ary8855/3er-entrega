@@ -1,5 +1,5 @@
-$color-p: whitesmoke;
-$color-h5: grey;
+$color-blanco: whitesmoke;
+$color-gris: grey;
 /*recorrer un mapa*/
 $mapa: (
     uno:#3b5998,
@@ -15,7 +15,6 @@ $mapa: (
     position:absolute;
     bottom:-30px;
     left:0px;
-    /*content:'color: #{$color}'*/;
     }
 }
 }
