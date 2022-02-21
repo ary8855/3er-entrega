@@ -1,0 +1,21 @@
+$color-p: whitesmoke;
+$color-h5: grey;
+/*recorrer un mapa*/
+$mapa: (
+    uno:#3b5998,
+    dos:#00acee,
+    tres:#833ab4,
+    cuatro:red,
+    cinco:#FF5A5F
+);
+@each $clase, $color in $mapa {
+.caja.#{$clase}{
+    background-color: $color;
+    &:before{
+    position:absolute;
+    bottom:-30px;
+    left:0px;
+    /*content:'color: #{$color}'*/;
+    }
+}
+}

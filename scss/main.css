@@ -1,0 +1,61 @@
+.nav-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#reviews-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, white, rebeccapurple);
+  text-align: left;
+}
+
+body h5 {
+  color: grey;
+}
+
+body p {
+  color: #333333;
+}
+
+div nav ul li a {
+  color: goldenrod;
+}
+
+div nav ul li a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  body h1 {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
