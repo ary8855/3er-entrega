@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 //media queries
@@ -35,24 +35,20 @@ body {
     text-align: left;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 2.5rem;        
-    h4 {
-        background-color: $color-gris;
-    }
-    h5 {
-        background-color: $color-gris;
-    }
-    p {
-        background-color: $color-blanco;
-    }
+    padding-bottom: 2.5rem;
 }
 
 .hero{
     @extend .opinions;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .news-cards{
     @extend .opinions;
+}
+.card:hover{
+    background-color: rgba(111, 162, 255, 0.438);
+    cursor: pointer;
 }
 .container-noticias{
     @extend .opinions;
