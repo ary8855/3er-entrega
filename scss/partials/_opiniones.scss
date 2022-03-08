@@ -56,24 +56,12 @@
     color: green;
     cursor: pointer
 }
-/*article*/
-article{
-    display:flex;
-}
-.caja{
-    box-sizing: border-box;
-    padding:8px;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    border:1px solid black;
-}
 /*mixin*/
 @mixin important-text {
     color: black;
     border-radius: 4px;
     padding: 10px;
-  }
+}
   
 .danger {
 @include important-text;

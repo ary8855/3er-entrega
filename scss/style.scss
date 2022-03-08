@@ -6,13 +6,14 @@
     padding: 0;
     font-family: 'Playfair Display', serif;
 }
-
 //media queries
 @media (min-width: 200px) {
     main {
-      width: 100%;
+      width: 95%;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
+      margin-top: 1rem;
+      padding-bottom: 4.5rem;
     }
 }  
 @media (min-width: 768px) {
@@ -20,6 +21,8 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 1rem;
+      padding-bottom: 2.5rem;
     }
 }
 @media (min-width: 992px) {
@@ -27,21 +30,23 @@
       width: 80%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 2rem;
+      padding-bottom: 2.5rem;      
     }
 }
 //nesting
-body {
-    background: #c7b198;
-    text-align: left;
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 2.5rem;
-}
-
-.hero{
+#hero {
     @extend .opinions;
+    text-align: center;
+}
+#hero-text {
     text-align: justify;
     text-justify: inter-word;
+}
+body {
+    background: #c7b198;
+    position: relative;
+    min-height: 100vh;
 }
 .news-cards{
     @extend .opinions;

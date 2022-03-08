@@ -8,13 +8,3 @@ $mapa: (
     cuatro:red,
     cinco:#FF5A5F
 );
-@each $clase, $color in $mapa {
-.caja.#{$clase}{
-    background-color: $color;
-    &:before{
-    position:absolute;
-    bottom:-30px;
-    left:0px;
-    }
-}
-}
