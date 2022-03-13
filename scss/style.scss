@@ -1,12 +1,11 @@
 @import './partials/variables', './partials/opiniones', './partials/footer';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
     font-family: 'Playfair Display', serif;
 }
-//media queries  
+//media queries
 @media (min-width: 200px) {
     main {
       width: 95%;
@@ -35,20 +34,17 @@
       margin-bottom: 2.5rem;      
     }
 }
+//general
 body {
     background: #c7b198;    
     min-height: 100vh;
 }
-#hero {
-    @extend .opinions;
+#titulo {
     text-align: center;
 }
-#hero-text {
-    text-align: justify;
-    text-justify: inter-word;
-}
+//index
 .news-cards{
-    @extend .opinions;
+    @extend .ubication;
     .row {
         .col {
             display: flex;
@@ -62,44 +58,22 @@ body {
     }
 }
 .card:hover{
-    background-color: whitesmoke;
+    background-color: $color-blanco;
     cursor: pointer;
-}
-.container-noticias{
-    @extend .opinions;
-}
-.contact{
-    @extend .opinions;
-}
-.ubication{
-    @extend .opinions;
-}
-.opinions{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 .img {
     width: 100%;
     height: auto;
 }
-#carouselExampleCaptions {
-    padding-bottom: 2rem;
-}
-#carouselExampleCaptions1 {
-    @extend #carouselExampleCaptions;
-}
-#carouselExampleCaptions2 {
-    @extend #carouselExampleCaptions;
-}
-#carouselExampleCaptions3 {
-    @extend #carouselExampleCaptions;
+#hero {
+    @extend .ubication;
+    text-align: center;
 }
 #hero-text {
     padding-top: 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
-#titulo {
-    text-align: center;
-}  
 .container, .container-sm {
     max-width: 100vw;
 }
@@ -115,15 +89,10 @@ body {
 .btn-primary:hover {
     background-color: rgb(197, 141, 0);
 }
-#carouselExampleCaptions {
-    .carousel-inner{
-        h5, p {
-            color: white;
-            background: rgb(34, 34, 34);
-            background: rgba(0, 0, 0, 0.4);
-            padding: 4px 8px;
-        }
-    }        
+//ubicacion
+.ubication{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .ubication {
     padding-top: 1rem;
@@ -139,7 +108,30 @@ body {
 iframe {
     margin: 5px;
 }
-//Contacto
+//hotel
+#carouselExampleCaptions {
+    padding-bottom: 2rem;
+}
+#carouselExampleCaptions1 {
+    @extend #carouselExampleCaptions;
+}
+#carouselExampleCaptions2 {
+    @extend #carouselExampleCaptions;
+}
+#carouselExampleCaptions3 {
+    @extend #carouselExampleCaptions;
+}
+#carouselExampleCaptions {
+    .carousel-inner{
+        h5, p {
+            color: white;
+            background: rgb(34, 34, 34);
+            background: rgba(0, 0, 0, 0.4);
+            padding: 4px 8px;
+        }
+    }        
+}
+//contacto
 .contact-info{
   display: flex;
   align-items: center;
@@ -147,8 +139,8 @@ iframe {
   width: 100%;
   padding-top: 1rem;
 }
-.card{
-  background: #2f3542;
+.cards{
+  background: $color-gris;
   padding: 0 20px;
   margin: 0 10px;
   width: calc(33% - 20px);
@@ -160,7 +152,7 @@ iframe {
   color: goldenrod;
   cursor: pointer;
 }
-.card-icon{
+.cards-icon{
   font-size: 28px;
   background: black;
   width: 60px;
@@ -170,12 +162,12 @@ iframe {
   border-radius: 50%;
   transition: 0.3s linear;
 }
-.card:hover .card-icon{
+.cards:hover .cards-icon{
   background: none;
   color: goldenrod;
   transform: scale(1.6);
 }
-.card p{
+.cards p{
   margin-top: 20px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -183,7 +175,7 @@ iframe {
   opacity: 0;
   transition: 0.3s linear;
 }
-.card:hover p{
+.cards:hover p{
   max-height: 40px;
   opacity: 1;
 }
