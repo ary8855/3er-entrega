@@ -1,4 +1,32 @@
 /*recorrer un mapa*/
+.opiniones .caja-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.opiniones .caja-contenedor .caja {
+  background: whitesmoke;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: .1rem solid gray;
+  flex: 1 1 30rem; }
+
+.opiniones .caja-contenedor .caja .user img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 8rem;
+  width: 8rem;
+  margin-top: 2rem; }
+
+.opiniones .caja-contenedor .caja .user h3 {
+  color: green; }
+
+.opiniones .caja-contenedor .caja .user .stars i {
+  color: green; }
+
 .card {
   border: none;
   border-radius: 4px; }
@@ -55,10 +83,10 @@
   background-color: whitesmoke; }
 
 footer {
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
-  height: 2.5rem; }
+  height: 220px; }
 
 .footer-content {
   display: flex;
@@ -117,9 +145,9 @@ dl, ol, ul {
   margin-bottom: 0rem; }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Playfair Display', serif; }
 
 @media (min-width: 200px) {
@@ -128,7 +156,7 @@ dl, ol, ul {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    padding-bottom: 4.5rem; } }
+    margin-bottom: 4.5rem; } }
 
 @media (min-width: 768px) {
   main {
@@ -136,7 +164,8 @@ dl, ol, ul {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    padding-bottom: 2.5rem; } }
+    margin-bottom: 2.5rem;
+    position: relative; } }
 
 @media (min-width: 992px) {
   main {
@@ -144,7 +173,11 @@ dl, ol, ul {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    padding-bottom: 2.5rem; } }
+    margin-bottom: 2.5rem; } }
+
+body {
+  background: #c7b198;
+  min-height: 100vh; }
 
 #hero {
   text-align: center; }
@@ -153,13 +186,17 @@ dl, ol, ul {
   text-align: justify;
   text-justify: inter-word; }
 
-body {
-  background: #c7b198;
-  position: relative;
-  min-height: 100vh; }
+.news-cards .row .col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: top;
+  align-content: top;
+  min-width: 220px;
+  min-height: 300px; }
 
 .card:hover {
-  background-color: rgba(111, 162, 255, 0.438);
+  background-color: whitesmoke;
   cursor: pointer; }
 
 .opinions, #hero, .news-cards, .container-noticias, .contact, .ubication {
@@ -169,3 +206,94 @@ body {
 .img {
   width: 100%;
   height: auto; }
+
+#carouselExampleCaptions, #carouselExampleCaptions1, #carouselExampleCaptions2, #carouselExampleCaptions3 {
+  padding-bottom: 2rem; }
+
+#hero-text {
+  padding-top: 0.5rem; }
+
+#titulo {
+  text-align: center; }
+
+.container, .container-sm {
+  max-width: 100vw; }
+
+.btn-primary-btn, #submitButton {
+  background-color: goldenrod; }
+
+.btn-primary-btn, #submitButton:hover {
+  background-color: #c58d00; }
+
+.btn-primary {
+  background-color: goldenrod; }
+
+.btn-primary:hover {
+  background-color: #c58d00; }
+
+#carouselExampleCaptions .carousel-inner h5, #carouselExampleCaptions1 .carousel-inner h5, #carouselExampleCaptions2 .carousel-inner h5, #carouselExampleCaptions3 .carousel-inner h5, #carouselExampleCaptions .carousel-inner p, #carouselExampleCaptions1 .carousel-inner p, #carouselExampleCaptions2 .carousel-inner p, #carouselExampleCaptions3 .carousel-inner p {
+  color: white;
+  background: #222222;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px; }
+
+.ubication {
+  padding-top: 1rem; }
+
+.alrededor {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
+
+iframe {
+  margin: 5px; }
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1rem; }
+
+.card {
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: goldenrod;
+  cursor: pointer; }
+
+.card-icon {
+  font-size: 28px;
+  background: black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear; }
+
+.card:hover .card-icon {
+  background: none;
+  color: goldenrod;
+  transform: scale(1.6); }
+
+.card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear; }
+
+.card:hover p {
+  max-height: 40px;
+  opacity: 1; }

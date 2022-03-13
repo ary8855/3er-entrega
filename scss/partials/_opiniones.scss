@@ -1,3 +1,71 @@
+.opiniones {
+    .caja-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.opiniones {
+    .caja-contenedor {
+        .caja {
+            background: whitesmoke;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            border: .1rem solid gray;
+            flex: 1 1 30rem;
+        }
+    }
+}
+.opiniones {
+    .caja-contenedor {
+        .caja {
+            .user {
+                img {
+                    border-radius: 50%;
+                    object-fit: cover;
+                    height: 8rem;
+                    width: 8rem;
+                    margin-top: 2rem;
+                }                
+            }            
+        }
+    }
+}
+.opiniones {
+    .caja-contenedor {
+        .caja {
+            .user {
+                h3 {
+                    color: green;
+                }                
+            }            
+        }
+    }
+}
+.opiniones {
+    .caja-contenedor {
+        .caja {
+            .user {
+                .stars {
+                    i {
+                        color: green;
+                    }                    
+                }                
+            }            
+        }
+    }
+}
+
+
+
+
+
+
+
+
 .card {
     border: none;
     border-radius: 4px

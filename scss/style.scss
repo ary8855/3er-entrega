@@ -1,19 +1,19 @@
 @import './partials/variables', './partials/opiniones', './partials/footer';
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;    
     font-family: 'Playfair Display', serif;
 }
-//media queries
+//media queries  
 @media (min-width: 200px) {
     main {
       width: 95%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 1rem;
-      padding-bottom: 4.5rem;
+      margin-bottom: 4.5rem;      
     }
 }  
 @media (min-width: 768px) {
@@ -22,7 +22,8 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 1rem;
-      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+      position: relative;
     }
 }
 @media (min-width: 992px) {
@@ -31,10 +32,13 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 2rem;
-      padding-bottom: 2.5rem;      
+      margin-bottom: 2.5rem;      
     }
 }
-//nesting
+body {
+    background: #c7b198;    
+    min-height: 100vh;
+}
 #hero {
     @extend .opinions;
     text-align: center;
@@ -43,16 +47,22 @@
     text-align: justify;
     text-justify: inter-word;
 }
-body {
-    background: #c7b198;
-    position: relative;
-    min-height: 100vh;
-}
 .news-cards{
     @extend .opinions;
+    .row {
+        .col {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: top;
+            align-content: top;
+            min-width: 220px;
+            min-height: 300px;
+        }
+    }
 }
 .card:hover{
-    background-color: rgba(111, 162, 255, 0.438);
+    background-color: whitesmoke;
     cursor: pointer;
 }
 .container-noticias{
@@ -71,4 +81,109 @@ body {
 .img {
     width: 100%;
     height: auto;
+}
+#carouselExampleCaptions {
+    padding-bottom: 2rem;
+}
+#carouselExampleCaptions1 {
+    @extend #carouselExampleCaptions;
+}
+#carouselExampleCaptions2 {
+    @extend #carouselExampleCaptions;
+}
+#carouselExampleCaptions3 {
+    @extend #carouselExampleCaptions;
+}
+#hero-text {
+    padding-top: 0.5rem;
+}
+#titulo {
+    text-align: center;
+}  
+.container, .container-sm {
+    max-width: 100vw;
+}
+.btn-primary-btn, #submitButton {
+    background-color: goldenrod;
+}
+.btn-primary-btn, #submitButton:hover {
+    background-color: rgb(197, 141, 0);
+}
+.btn-primary {
+    background-color: goldenrod;
+}
+.btn-primary:hover {
+    background-color: rgb(197, 141, 0);
+}
+#carouselExampleCaptions {
+    .carousel-inner{
+        h5, p {
+            color: white;
+            background: rgb(34, 34, 34);
+            background: rgba(0, 0, 0, 0.4);
+            padding: 4px 8px;
+        }
+    }        
+}
+.ubication {
+    padding-top: 1rem;
+}
+.alrededor {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+iframe {
+    margin: 5px;
+}
+//Contacto
+.contact-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1rem;
+}
+.card{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: goldenrod;
+  cursor: pointer;
+}
+.card-icon{
+  font-size: 28px;
+  background: black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.card:hover .card-icon{
+  background: none;
+  color: goldenrod;
+  transform: scale(1.6);
+}
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
 }
