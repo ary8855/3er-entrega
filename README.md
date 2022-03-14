@@ -10,4 +10,4 @@ https://hogarhotel.000webhostapp.com/
 https://ary8855.github.io/entrega-final-dw/
 
 //codigo en github
-https://github.com/ary8855/3er-entrega
+https://github.com/ary8855/entrega-final-dw
