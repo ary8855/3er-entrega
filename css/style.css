@@ -168,10 +168,12 @@ body {
 
 .ubication, .news-cards, #hero {
   margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.ubication, .news-cards, #hero {
-  padding-top: 1rem; }
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center; }
 
 .alrededor {
   margin: 10px;

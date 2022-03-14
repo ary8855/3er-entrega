@@ -93,9 +93,11 @@ body {
 .ubication{
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-.ubication {
-    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 .alrededor {
     margin: 10px;
