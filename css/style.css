@@ -147,7 +147,6 @@ body {
   text-align: center; }
 
 #hero-text {
-  padding-top: 0.5rem;
   text-align: justify;
   text-justify: inter-word; }
 
@@ -166,17 +165,17 @@ body {
 .btn-primary:hover {
   background-color: #c58d00; }
 
-.ubication, .news-cards, #hero {
-  margin-top: 2rem;
+.ubication {
   margin-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center; }
+  .ubication p {
+    text-align: left; }
 
 .alrededor {
-  margin: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -241,3 +240,7 @@ iframe {
 .cards:hover p {
   max-height: 40px;
   opacity: 1; }
+
+.config, .news-cards, #hero {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
